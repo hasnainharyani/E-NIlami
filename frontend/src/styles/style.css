@@ -1,0 +1,107 @@
+.primary-img-container {
+/* .container { */
+  position: relative;
+  width: 400px;
+  /* hei: 400px; */
+}
+
+.secondary-imgs-container{
+  position: relative;
+  width: 80px;
+  /* height: auto; */
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.primary-img-container:hover .overlay{
+  opacity: 1;
+}
+
+.secondary-imgs-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.chatBox-conversation {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 5px;
+}
+.conversation{
+  overflow: auto;
+  padding: 10px;
+}
+.typeBox{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid rgba(37,37,37,0.2);
+  border-radius: 5px 5px 0 0;
+}
+
+.msg-box-reciever{
+  display: flex;
+  margin: 8px 2px;
+  justify-content: flex-start;
+}
+
+.msg-box-sender{
+  display: flex;
+  margin: 8px 2px;
+  justify-content: flex-end;
+}
+
+.msg, .msg2{
+  background: rgba(37,37,37,0.2);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.msg2{
+  background: rgba(0, 0, 255, 0.2);
+}
+
+.chat-btn{
+ background-color: aqua; 
+ padding: 7px 12px;
+ text-decoration: none;
+ border-radius: 5px;
+}
+
+.chat-btn:hover{
+  background-color: aquamarine;
+}
+
+.receiverName{
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(200,200,200,0.5);
+}
